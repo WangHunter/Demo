@@ -1,12 +1,12 @@
 package com.pdf2word;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.PDFTextStripper;
+import org.apache.pdfbox.util.PDFTextStripper;
 
 import java.io.*;
 
 
-//解决不了图片问题，出现乱码
+//解决不了图片问题，出现乱码，存在格式异常
 public class Pdf2word {
     public static void main(String[] args) throws IOException {
         File file = new File("D:\\Desktop\\zookeeper-3.4.6和kafka安装文档.pdf");
